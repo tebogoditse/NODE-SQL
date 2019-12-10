@@ -35,19 +35,30 @@ function deleteVisitor(id) {
 
 }
 
-function updateVisitor(name, value1, value2) {
+function updateVisitor() {
 
   //UPDATE Visitors SET name = 'Malaika Kekana' WHERE name = 'Alice Cooper'
   var queryString = `UPDATE Visitors SET ${name} = ${value2} WHERE ${name} = ${value1}`;
 
   pool.query(queryString, (error, results) => {
     console.log(error, results);
-    pool.end()
+    pool.end();
   })
 
 }
 
-updateVisitor();
+function deleteAllVisitors() {
+  var queryString = `DELETE FROM Visitors`;
+
+  pool.query(queryString, (error, results) => {
+    console.log(error, results);
+    pool.end();
+  })
+
+}
+
+deleteAllVisitors();
+//updateVisitor();
 //deleteVisitor(4);
 
 //save();
