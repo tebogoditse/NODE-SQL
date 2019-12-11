@@ -83,9 +83,10 @@ function deleteAllVisitors() {
   })
 }
 
-//viewOneVisitor(2);
+
+viewOneVisitor(2);
 // deleteAllVisitors();
-updateVisitor();
+//updateVisitor();
 //deleteVisitor(4);
 //listAllVisitors();
 //save();
