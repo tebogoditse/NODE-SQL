@@ -9,7 +9,7 @@ const pool = new Pool({
 
 function save() {
 
-  var queryString = `CREATE TABLE Ndinga(
+  var queryString = `CREATE TABLE Visitors(
     id SERIAL PRIMARY KEY,
     name VARCHAR(30),
     age INT,
@@ -84,8 +84,8 @@ function deleteAllVisitors() {
 }
 
 
-viewOneVisitor(2);
-// deleteAllVisitors();
+//viewOneVisitor(2);
+//deleteAllVisitors();
 //updateVisitor();
 //deleteVisitor(4);
 //listAllVisitors();
